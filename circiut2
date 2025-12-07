@@ -1,0 +1,30 @@
+from qiskit import QuantumCircuit
+
+# Create a quantum circuit with 4 qubits and 4 classical bits
+qc = QuantumCircuit(4, 4)
+
+# Apply gates according to the provided diagram
+qc.h(0)
+qc.x(1)
+qc.h(1)
+qc.x(2)
+qc.h(2)
+#qc.h(3)
+qc.cx(2, 3)
+qc.barrier()
+qc.cx(0, 2)
+qc.cx(1, 3)
+qc.barrier()
+# Measurement
+qc.measure(0, 0)
+qc.measure(1, 1)
+
+
+
+# Draw the circuit
+qc.draw(output='mpl')
+
+
+# Draw and save as PDF
+fig = qc.draw(output="mpl")
+fig.savefig("quantum_circuit4.pdf")
