@@ -39,7 +39,6 @@ The code implements the generalized Deutsch–Jozsa (GDJ) algorithm and the nume
 - NumPy
 - SciPy
 - Matplotlib
-- (Add any other libraries: scikit-learn, etc.)
 
 Install dependencies with:
 
