@@ -11,7 +11,7 @@ The code implements the generalized Deutsch–Jozsa (GDJ) algorithm and the nume
 
 ---
 
-## Repository structure
+## Repository structures
 
 - `src/`  
   Core implementation of the generalized Deutsch–Jozsa algorithm and helper functions.
